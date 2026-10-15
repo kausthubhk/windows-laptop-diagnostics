@@ -1,44 +1,97 @@
-# Windows RAM, SSD, and battery validation notes
+# Windows laptop diagnostics
 
-This project documents diagnostics and performance checks run on a Dell G3 3500 in September and October 2026. It includes sanitized evidence and scripts for future local measurements.
+A collection of Windows scripts and notes for checking memory performance, observing a normal workload, collecting battery telemetry, and reviewing selected storage health indicators. The scripts are intended for local use on Windows 10 or 11. They collect evidence; they do not diagnose every hardware fault or certify a device as healthy.
 
-## Findings at a glance
+## Choose a workflow
 
-- The laptop moved through 8 GiB (2×4 GiB, 10 September), 8 GiB (1×8 GiB, 14 October), and 12 GiB (8+4 GiB, 15 October). The 12 GiB setup adds capacity and the user reported Chrome and Codex felt smoother, with less heat, than during the earlier 8 GiB experience. A five-minute Netflix-in-Chrome + Codex session on 15 October was reported smooth. These are useful observations, not a controlled before/after test; the October session was on battery and temperature was not instrumented.
-- Synthetic memory scores for the 12 GiB setup were lower than the 2×4 GiB 10 September baseline on all 11 bandwidth rows, with higher mean idle latency. Dates and platform conditions differed, and those figures do not predict that apps run a matching percentage slower. The 8+4 channel arrangement was not directly confirmed.
-- The 16 GiB 2×8 GiB configuration is listed by Dell as supported ([memory specifications](https://www.dell.com/support/manuals/en-in/g-series-15-3500-laptop/dell-g3-15-3500-setup-and-specifications/memory?guid=guid-e9d2ea83-38a4-431d-803c-96d63c1dbc34&lang=en-us)), but it was not tested. The live workload showed some memory headroom constraints without sustained page-outs or disk queue. The 15 October report recommended keeping 12 GiB and did not show an urgent need to spend ₹4,500 for another 8 GiB module.
-- A 19 September read-only SSD snapshot reported CrystalDiskInfo “Good (66%)” for a KIOXIA BG4 256 GB drive. The raw CrystalDiskInfo SMART line was `05 000000000022 Percentage Used`; its value `0x22` is hexadecimal for 34 decimal. That is consistent with the 66% health display. NVM Express defines this as a vendor-specific estimate of endurance consumed, not a remaining-years forecast. Critical warning, media/data-integrity errors, and error-log entries were zero in that snapshot. CrystalDiskMark was installed but not run.
-- On 15 October, Windows and Dell software reported favorable battery function indicators, including 51,004 mWh reported design/full-charge capacity and passing SupportAssist battery and charger checks. Those checks did not authenticate the pack, establish newness, or measure a complete capacity cycle.
+Start with the question you want to answer. For a slow or stuttering laptop, observe the usual workload before running a synthetic benchmark. For memory comparisons, use the same benchmark and conditions on each run. For battery concerns, collect the available Windows readings and note that device vendors expose different data. This repository has no automated SSD diagnostic script; its storage guidance is a manual, read-only SMART observation.
 
-Read [observations](docs/OBSERVATIONS.md) for the full dated record and limits, [software inventory](docs/SOFTWARE.md) for tools and installation status, and the [publication proposal](docs/PUBLICATION-PROPOSAL.md) for the intended public scope and privacy choices.
+| Goal | Tool | What it records |
+| --- | --- | --- |
+| Compare RAM performance | [`scripts/ram-suite.ps1`](scripts/ram-suite.ps1) | Intel MLC and Windows WinSAT output, run status, system and module inventory |
+| Observe a workload | [`scripts/monitor-ram.ps1`](scripts/monitor-ram.ps1) | Memory, paging, CPU, disk counters, and grouped process memory |
+| Collect battery readings | [`scripts/collect-battery.ps1`](scripts/collect-battery.ps1) | Windows battery providers, power context, and a battery report; optional energy report |
+| Run a limited memory check | [`scripts/test-memory-patterns.ps1`](scripts/test-memory-patterns.ps1) | Pattern checks over one bounded user-mode buffer |
+| Summarize RAM benchmark output | [`scripts/compare-ram.py`](scripts/compare-ram.py) | Statistics from supported WinSAT/MLC output folders |
+| Export reviewed evidence | [`scripts/prepare-public-results.py`](scripts/prepare-public-results.py) | Explicitly allowlisted, sanitized text files and a hash manifest |
 
-## Reproduction scripts
+## Getting started
 
-The scripts in [`scripts/`](scripts/) are for new local captures. They write to ignored `local-results/` folders and never overwrite an existing output label.
+Windows 10 or 11 and Windows PowerShell 5.1 are the supported baseline. Clone the repository and open PowerShell in its directory:
 
-- [`ram-suite.ps1`](scripts/ram-suite.ps1) runs the elevated WinSAT and Intel MLC matrix. Windows PowerShell must already be elevated; supply a locally downloaded, signed Intel MLC executable. The script does not install or load a driver, change power settings, or restart the computer.
-- [`monitor-ram.ps1`](scripts/monitor-ram.ps1) samples Windows memory, processor, and disk counters during an ordinary workload. It groups process working sets for common browser and assistant process names, so those totals can include shared pages.
-- [`compare-ram.py`](scripts/compare-ram.py) summarizes supported RAM output folders using Python's standard library. The Python installation version used by historical sessions was not captured.
-- [`collect-battery.ps1`](scripts/collect-battery.ps1) collects Windows battery/power telemetry and can optionally create a native `powercfg /energy` report. That report option requires an already elevated shell; collection does not launch an elevation prompt.
-- [`test-memory-patterns.ps1`](scripts/test-memory-patterns.ps1) runs an optional bounded 256 MiB user-mode pattern screen. It is not an exhaustive physical-memory test; recovery documentation describes its limits.
-- [`prepare-public-results.py`](scripts/prepare-public-results.py) regenerates the explicit sanitized evidence allowlist. Its `--run-dir` and `--label` options can export a reviewed new run with a per-run manifest; the historical root manifest is preserved.
-- [`RECOVERY.md`](docs/RECOVERY.md) documents official tool sources, prerequisites, manual checks, and recovery steps.
+```powershell
+git clone https://github.com/kausthubhk/windows-laptop-diagnostics.git
+Set-Location windows-laptop-diagnostics
+```
 
-A benchmark compares performance; it is not a memory integrity test. WinSAT requires elevation. Intel MLC must be obtained separately under Intel's license. CrystalDiskMark performs storage writes and was not run in the historical session; use it only when a storage-write benchmark is deliberately wanted. Windows Memory Diagnostic and Dell preboot diagnostics require a restart and were not verified as completed successfully here.
+Python 3.10 or newer is optional and needed only for the Python comparison and export scripts; both use the standard library. Intel MLC is needed only for the RAM benchmark, and must be obtained separately under Intel's license terms. Other workflows use Windows components and the included PowerShell scripts.
 
-## Results and provenance
+Use a fresh, unique output label for each capture. PowerShell scripts write beneath `local-results/<label>/`, which is ignored by Git, and refuse to reuse an existing label. Start PowerShell in the repository root. If script execution is blocked by the machine's policy, follow the device owner's or organization's policy; these instructions do not relax it.
 
-- RAM baseline: [`results/ram/sep-2026-09-10/`](results/ram/sep-2026-09-10/)
-- One 8 GiB module: [`results/ram/single-8gb-2026-10-14/`](results/ram/single-8gb-2026-10-14/)
-- 8+4 GiB: [`results/ram/8gb-plus-4gb-2026-10-15/`](results/ram/8gb-plus-4gb-2026-10-15/)
-- Netflix + Codex workload: [`results/workload/netflix-codex-12gb-2026-10-15/`](results/workload/netflix-codex-12gb-2026-10-15/)
-- Battery summary: [`results/battery/2026-10-15-summary.md`](results/battery/2026-10-15-summary.md)
-- Short battery telemetry: [`results/battery/2026-10-15-short-check-telemetry.csv`](results/battery/2026-10-15-short-check-telemetry.csv)
-- SSD summary: [`results/ssd/2026-09-19-summary.md`](results/ssd/2026-09-19-summary.md) and [machine-readable data](results/ssd/2026-09-19-summary.json)
-- Export provenance and output hashes: [`results/manifest.json`](results/manifest.json)
+To observe an ordinary workload, start the workload yourself and run a non-elevated PowerShell session:
 
-The manifest maps sanitized public files back to local source-relative names and records source/output SHA-256 hashes. Raw session logs, full application process lists, private hardware identifiers, raw battery reports, installers, drivers, archives, and local temporary caches are excluded. A manifest proves file transformation/hash correspondence, not the truth of every sensor value.
+```powershell
+& .\scripts\monitor-ram.ps1 -OutputLabel 'workload-example-01' -DurationSeconds 300
+```
 
-## Scope
+The monitor samples for one second per sample. It requests English performance counter names, so some counters may fail on localized Windows installations. Process groups use common browser and assistant process names. The context files contain machine and module details, so review them before sharing.
 
-The public proposal is for Windows memory, storage, and battery diagnostics on one laptop. It is not a general hardware repair guide, a warranty/authenticity determination, or a prediction of future component life. The local raw captures remain private and are not needed to use the scripts.
+To collect battery readings over five minutes:
+
+```powershell
+& .\scripts\collect-battery.ps1 -OutputLabel 'battery-example-01' -DurationSeconds 300 -SampleIntervalSeconds 30
+```
+
+The collector does not change charging settings or perform a full capacity test. The default battery HTML report may contain identifying details and battery history; treat it as private. `-EnergyReport` additionally runs `powercfg /energy` and requires an already elevated PowerShell window; the script will not request elevation. Providers may be unavailable on a particular device, and missing values are not zero.
+
+For a RAM performance matrix, first obtain Intel Memory Latency Checker under its license terms. The runner requires an already elevated PowerShell window and a valid Intel Authenticode signature on the selected executable. It runs four MLC modes five times each and WinSAT five times. This is a sustained synthetic workload; stop if the laptop is unstable or under memory pressure.
+
+```powershell
+& .\scripts\ram-suite.ps1 `
+  -OutputLabel 'ram-example-01' `
+  -MlcPath 'C:\Path\To\mlc\Windows\mlc.exe'
+```
+
+The suite does not install or load drivers, change power or boot settings, or restart the computer. MLC is not included in this repository. Use the [Intel MLC download and documentation](https://www.intel.com/content/www/us/en/developer/articles/tool/intelr-memory-latency-checker.html) to review its source and terms.
+
+The optional memory pattern screen checks a single 64–512 MiB user-mode buffer with eight patterns. It skips the test when available memory is below its threshold (768 MiB by default). A pass covers only that buffer and those patterns; it does not test all physical RAM or certify DIMMs.
+
+```powershell
+& .\scripts\test-memory-patterns.ps1 -OutputLabel 'memory-screen-example-01'
+```
+
+Python's standard library is enough to compare existing RAM result folders. The comparison script does not run benchmarks:
+
+```powershell
+python .\scripts\compare-ram.py `
+  --config 'run-a=local-results/ram-run-a' `
+  --config 'run-b=local-results/ram-run-b'
+```
+
+Use the script's `--help` for all options. Its JSON includes resolved input directory paths and machine metadata, so review it before sharing. It summarizes recognized text; it cannot establish that two runs had equivalent conditions.
+
+Use the parameterized scripts under `scripts/` for new captures. Older root-level scripts and `.cmd` wrappers belong to the historical workflow: some contain machine-specific paths, and the wrappers invoke PowerShell with an execution-policy bypass. They are not part of this generic quickstart.
+
+## Review and interpret results
+
+Record the laptop model, Windows build, installed memory configuration, tool versions, date, AC/battery state, active power plan, workload, and any errors. Keep direct observations such as “the video stuttered at 10:32” separate from counter readings. For comparisons, document differences in background work, temperature, power source, firmware, and operating system activity. See the [run template](docs/RUN-TEMPLATE.md).
+
+Counters and benchmarks are clues, not a diagnosis. A memory bandwidth score is not a measure of application speed. Paging counters can rise for normal reasons; interpret them with available memory, workload timing, and disk activity. The memory pattern screen is bounded. Battery health and capacity values depend on Windows and vendor providers and are not a complete charge/discharge test or proof of battery provenance. A SMART health label is a snapshot rather than a guarantee of future storage reliability.
+
+Before sharing results, inspect them for usernames, absolute paths, machine and module identifiers, battery history, installed software, and other private details. The public-results exporter uses an explicit allowlist, but its output still needs review. Its default mode rebuilds generated files under `results/` and updates `results/manifest.json`; inspect the resulting diff before keeping or sharing it. Its `--run-dir` mode writes a new labeled export under `results/` and refuses an existing label. Do not share raw capture directories by default. See [privacy notes](docs/PRIVACY.md) and the [exporter](scripts/prepare-public-results.py).
+
+## SSD observations
+
+There is no automated SSD test in this repository. If a SMART viewer is already available, record its drive model, health indicator, temperature, and selected attributes with a timestamp. The notes recommend a read-only observation and do not call for a surface scan, firmware update, or write benchmark. SMART fields and vendor labels vary and do not predict remaining service life. See [software and tool notes](docs/SOFTWARE.md).
+
+## More detail
+
+- [Recovery and workflow guide](docs/RECOVERY.md) describes requirements, commands, expected output, and limitations.
+- [Software inventory](docs/SOFTWARE.md) records tool provenance and historical use.
+- [Observations](docs/OBSERVATIONS.md), [sanitized results](results/), and [manifest](results/manifest.json) are dated examples from prior runs, not expected results for another laptop.
+- [Publication proposal](docs/PUBLICATION-PROPOSAL.md) explains the scope of the historical evidence.
+- [RAM benchmark notes](README-RAM-BENCHMARKS.md) cover the earlier benchmark work.
+
+## Reusable Codex skill
+
+This repository includes a reusable skill at [`.agents/skills/windows-laptop-diagnostics/SKILL.md`](.agents/skills/windows-laptop-diagnostics/SKILL.md). To use it from this checkout, ask Codex: “Use `.agents/skills/windows-laptop-diagnostics/SKILL.md` to help me investigate high memory use during my usual workload.”

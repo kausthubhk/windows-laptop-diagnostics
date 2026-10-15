@@ -5,6 +5,10 @@
 !/README.md
 !/docs/
 !/scripts/
+!/.agents/
+!/.agents/skills/
+!/.agents/skills/windows-laptop-diagnostics/
+!/.agents/skills/windows-laptop-diagnostics/SKILL.md
 !/results/
 
 # Never publish caches, third-party programs, installers, drivers, or archives.
