@@ -1,0 +1,30 @@
+# Public repository allowlist. Original captures stay local and unchanged.
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/docs/
+!/scripts/
+!/results/
+
+# Never publish caches, third-party programs, installers, drivers, or archives.
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.exe
+**/*.dll
+**/*.sys
+**/*.msi
+**/*.msix
+**/*.msixbundle
+**/*.appx
+**/*.appxbundle
+**/*.zip
+**/*.7z
+**/*.tar
+**/*.gz
+**/*.evtx
+**/.DS_Store
+**/Thumbs.db
+**/.env
+**/.env.*

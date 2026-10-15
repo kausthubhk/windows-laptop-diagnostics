@@ -1,0 +1,19 @@
+{
+  "capture_date": "2026-09-19",
+  "source_tool": "CrystalDiskInfo 9.9.2",
+  "model": "KBG40ZNS256G NVMe KIOXIA 256GB",
+  "health_status": "Good (66 %)",
+  "temperature": "54 C (129 F)",
+  "power_on_hours": "9654 hours",
+  "power_on_count": "8160 count",
+  "nvme_percentage_used_raw_hex": "0x22",
+  "nvme_percentage_used_decimal": 34,
+  "critical_warning_raw": 0,
+  "available_spare_percent": 100,
+  "media_data_integrity_errors": 0,
+  "error_information_log_entries": 0,
+  "host_reads": "143391 GB",
+  "host_writes": "61827 GB",
+  "interpretation": "CrystalDiskInfo reports 66% health and SMART Percentage Used raw 0x22 (34 decimal). Preserve these separately as reported; zero error counters do not establish newness or guarantee future reliability.",
+  "crystaldiskmark": "Version 9.0.3 was installed in that session but was not run."
+}

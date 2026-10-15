@@ -1,0 +1,9 @@
+Results -> <REPOSITORY>\ram-results\\current_8gb
+Running memory bandwidth benchmark 5 times...
+Memory benchmark run 1 of 5
+Memory benchmark run 2 of 5
+Memory benchmark run 3 of 5
+Memory benchmark run 4 of 5
+Memory benchmark run 5 of 5
+Capturing a two-minute Windows paging-pressure sample...
+Finished.

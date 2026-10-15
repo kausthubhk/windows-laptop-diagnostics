@@ -1,0 +1,24 @@
+{
+  "capture_phase": "workload start",
+  "note": "Aggregate process-group working sets; no PIDs or window titles.",
+  "groups": [
+    {
+      "name": "chatgpt",
+      "count": 14,
+      "working_set_mib": 2187.6,
+      "private_memory_mib": 2097.9
+    },
+    {
+      "name": "chrome",
+      "count": 18,
+      "working_set_mib": 2384.7,
+      "private_memory_mib": 1580.7
+    },
+    {
+      "name": "codex",
+      "count": 2,
+      "working_set_mib": 305.4,
+      "private_memory_mib": 188.1
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+Windows System Assessment Tool
+> Running: Feature Enumeration ''
+> Run Time 00:00:00.00
+> Running: System memory performance assessment '-mint 10 -maxt 20 -buffersize 256MB'
+Warning: The RDTSC to QPC delta is too high ( CPU 0 )
+Warning: The RDTSC to QPC delta is too high ( CPU 1 )
+Warning: The RDTSC to QPC delta is too high ( CPU 3 )
+Warning: The RDTSC to QPC delta is too high ( CPU 2 )
+> Run Time 00:00:22.98
+> Memory Performance                           14874.56 MB/s
+> Dshow Video Encode Time                      0.00000 s
+> Dshow Video Decode Time                      0.00000 s
+> Media Foundation Decode Time                 0.00000 s
+> Total Run Time 00:00:23.84

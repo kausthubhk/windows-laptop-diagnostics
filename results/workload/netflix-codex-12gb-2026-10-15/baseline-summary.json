@@ -1,0 +1,68 @@
+{
+  "phase": "pre-session baseline; Netflix playback was not confirmed",
+  "metrics": {
+    "AvailableMiB": {
+      "Mean": 1697.4333,
+      "Min": 1683.0,
+      "Max": 1712.0
+    },
+    "CommittedGiB": {
+      "Mean": 12.4699,
+      "Min": 12.436,
+      "Max": 12.542
+    },
+    "CommitLimitGiB": {
+      "Mean": 23.597,
+      "Min": 23.597,
+      "Max": 23.597
+    },
+    "PagesInputPerSec": {
+      "Mean": 38.539,
+      "Min": 0.0,
+      "Max": 274.54
+    },
+    "PagesOutputPerSec": {
+      "Mean": 0.0,
+      "Min": 0.0,
+      "Max": 0.0
+    },
+    "PageReadsPerSec": {
+      "Mean": 12.081,
+      "Min": 0.0,
+      "Max": 254.38
+    },
+    "PageFaultsPerSec": {
+      "Mean": 31887.8277,
+      "Min": 18665.1,
+      "Max": 42465.1
+    },
+    "CpuTotalPct": {
+      "Mean": 50.8677,
+      "Min": 38.81,
+      "Max": 62.06
+    },
+    "CpuCoreMaxPct": {
+      "Mean": 61.7203,
+      "Min": 47.77,
+      "Max": 72.62
+    },
+    "DiskReadSec": {
+      "Mean": 0.0007,
+      "Min": 0.0,
+      "Max": 0.0017
+    },
+    "DiskWriteSec": {
+      "Mean": 0.0005,
+      "Min": 0.0,
+      "Max": 0.003
+    },
+    "DiskQueue": {
+      "Mean": 0.0,
+      "Min": 0.0,
+      "Max": 0.0
+    }
+  },
+  "limitations": [
+    "Brief pre-session capture; it is not a controlled Netflix-on versus Netflix-off comparison."
+  ]
+}

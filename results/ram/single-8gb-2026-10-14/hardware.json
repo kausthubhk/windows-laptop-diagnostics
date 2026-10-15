@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-14",
+  "system_model": "Dell G3 3500",
+  "cpu_model": "Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz",
+  "ram_topology": "1x8 GiB",
+  "modules": [
+    {
+      "part_number": "M471A1K43EB1-CWE",
+      "capacity_gib": 8.0,
+      "reported_speed_mt_s": 3200,
+      "configured_speed_mt_s": 2933
+    }
+  ],
+  "power_plan": "Balanced",
+  "source_scope": "Allowlisted CIM inventory fields only; hostnames, serials, paths, and device identifiers omitted."
+}

@@ -1,0 +1,77 @@
+{
+  "phase": "workload",
+  "workload_context": "Netflix playing in Chrome; Codex open (user-confirmed)",
+  "started": "2026-10-15T13:39:05.5746049+05:30",
+  "finished": "2026-10-15T13:44:14.0651931+05:30",
+  "samples": 300,
+  "first_sample": "2026-10-15T13:39:08.7198432+05:30",
+  "last_sample": "2026-10-15T13:44:14.0449016+05:30",
+  "seconds_below_1_gib_available": 0,
+  "seconds_below_2_gib_available": 300,
+  "samples_pages_input_over_100_per_sec": 33,
+  "samples_pages_input_over_1000_per_sec": 7,
+  "samples_pages_output_over_100_per_sec": 1,
+  "metrics": {
+    "AvailableMiB": {
+      "Mean": 1582.9233,
+      "Min": 1345.0,
+      "Max": 1715.0
+    },
+    "CommittedGiB": {
+      "Mean": 12.5853,
+      "Min": 12.397,
+      "Max": 12.87
+    },
+    "CommitLimitGiB": {
+      "Mean": 23.597,
+      "Min": 23.597,
+      "Max": 23.597
+    },
+    "PagesInputPerSec": {
+      "Mean": 222.0424,
+      "Min": 0.0,
+      "Max": 17268.44
+    },
+    "PagesOutputPerSec": {
+      "Mean": 1.0015,
+      "Min": 0.0,
+      "Max": 290.6
+    },
+    "PageReadsPerSec": {
+      "Mean": 54.208,
+      "Min": 0.0,
+      "Max": 5324.94
+    },
+    "PageFaultsPerSec": {
+      "Mean": 35419.2778,
+      "Min": 2507.09,
+      "Max": 200163.85
+    },
+    "CpuTotalPct": {
+      "Mean": 47.3608,
+      "Min": 21.79,
+      "Max": 88.85
+    },
+    "CpuCoreMaxPct": {
+      "Mean": 60.2108,
+      "Min": 36.44,
+      "Max": 95.46
+    },
+    "DiskReadSec": {
+      "Mean": 0.0005,
+      "Min": 0.0,
+      "Max": 0.0051
+    },
+    "DiskWriteSec": {
+      "Mean": 0.0007,
+      "Min": 0.0,
+      "Max": 0.0073
+    },
+    "DiskQueue": {
+      "Mean": 0.06,
+      "Min": 0.0,
+      "Max": 6.0
+    }
+  },
+  "limitations": []
+}

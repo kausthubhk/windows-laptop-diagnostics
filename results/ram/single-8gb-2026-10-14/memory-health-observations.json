@@ -1,0 +1,20 @@
+{
+  "source_periods": [
+    "2026-10-14 pre-run 90-day query",
+    "2026-10-14 22:00:18–23:03:59 +05:30",
+    "2026-10-14 23:33–23:52 +05:30",
+    "2026-10-15 after reboot"
+  ],
+  "whea_events_found": 0,
+  "memory_diagnostic_result_events_found": 0,
+  "memory_diagnostic_scheduled_event": {
+    "time_local": "2026-10-14 23:33:34 +05:30",
+    "event_id": 1001,
+    "meaning": "scheduled to run immediately"
+  },
+  "diagnostic_outcome": "unknown; no result event available",
+  "notes": [
+    "No matching records in the queried providers and bounded periods is not proof of hardware health.",
+    "Windows Memory Diagnostic was reported by the user as run, but completion and outcome could not be verified."
+  ]
+}

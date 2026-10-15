@@ -1,0 +1,6 @@
+# Keep source readable across platforms; preserve evidence bytes for SHA-256 checks.
+* text=auto
+*.md text eol=lf
+*.py text eol=lf
+*.ps1 text eol=lf
+/results/** -text

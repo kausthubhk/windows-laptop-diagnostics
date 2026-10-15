@@ -1,0 +1,18 @@
+{
+  "test": "Pinned managed-buffer pattern screen",
+  "scope": "One user-mode virtual allocation; not exhaustive physical RAM coverage",
+  "started_utc": "2026-10-14T16:22:35.6857508Z",
+  "completed_utc": "2026-10-14T16:22:47.2534304Z",
+  "buffer_mib": 256,
+  "passes_completed": 8,
+  "bytes_written": 2147483648,
+  "bytes_verified": 2147483648,
+  "mismatch_count": 0,
+  "status": "PassedLimitedScreen",
+  "exit_code": 0,
+  "limitations": [
+    "Tests only the allocated managed buffer and pages Windows backs it with; it cannot prove that all installed physical memory is error-free.",
+    "User-mode virtual offsets are not physical DRAM addresses. No SPD, ECC, or device-level telemetry is read.",
+    "A clean result is a limited screening result, not proof that the module is new or fault-free."
+  ]
+}

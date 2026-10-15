@@ -1,0 +1,7 @@
+{
+  "run_date": "2026-10-14T22:00:18.4468575+05:30",
+  "administrator": true,
+  "mlc_signature_status": "Valid",
+  "scope": "MLC four existing flags x five repetitions, then WinSAT memory assessment x five repetitions.",
+  "driver_action": "None: this script does not install or load mlcdrv.sys."
+}

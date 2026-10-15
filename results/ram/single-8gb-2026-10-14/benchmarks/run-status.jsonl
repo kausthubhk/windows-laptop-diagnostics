@@ -1,0 +1,25 @@
+{"Name":"mlc-idle_latency-1","Arguments":"--idle_latency","Started":"2026-10-14T22:00:18.5528625+05:30","Completed":"2026-10-14T22:00:23.7441603+05:30","ElapsedSeconds":5.19,"ExitCode":0}
+{"Name":"mlc-idle_latency-2","Arguments":"--idle_latency","Started":"2026-10-14T22:00:23.7708065+05:30","Completed":"2026-10-14T22:00:28.8544765+05:30","ElapsedSeconds":5.1,"ExitCode":0}
+{"Name":"mlc-idle_latency-3","Arguments":"--idle_latency","Started":"2026-10-14T22:00:28.8744652+05:30","Completed":"2026-10-14T22:00:33.9166965+05:30","ElapsedSeconds":5.04,"ExitCode":0}
+{"Name":"mlc-idle_latency-4","Arguments":"--idle_latency","Started":"2026-10-14T22:00:33.9206956+05:30","Completed":"2026-10-14T22:00:38.9825478+05:30","ElapsedSeconds":5.07,"ExitCode":0}
+{"Name":"mlc-idle_latency-5","Arguments":"--idle_latency","Started":"2026-10-14T22:00:39.0031377+05:30","Completed":"2026-10-14T22:00:44.0702356+05:30","ElapsedSeconds":5.07,"ExitCode":0}
+{"Name":"mlc-max_bandwidth-1","Arguments":"--max_bandwidth","Started":"2026-10-14T22:00:44.0792777+05:30","Completed":"2026-10-14T22:03:19.7997260+05:30","ElapsedSeconds":155.72,"ExitCode":0}
+{"Name":"mlc-max_bandwidth-2","Arguments":"--max_bandwidth","Started":"2026-10-14T22:03:19.8115869+05:30","Completed":"2026-10-14T22:05:57.1803334+05:30","ElapsedSeconds":157.37,"ExitCode":0}
+{"Name":"mlc-max_bandwidth-3","Arguments":"--max_bandwidth","Started":"2026-10-14T22:05:57.1883665+05:30","Completed":"2026-10-14T22:08:33.2188208+05:30","ElapsedSeconds":156.03,"ExitCode":0}
+{"Name":"mlc-max_bandwidth-4","Arguments":"--max_bandwidth","Started":"2026-10-14T22:08:33.2361854+05:30","Completed":"2026-10-14T22:11:09.6081128+05:30","ElapsedSeconds":156.37,"ExitCode":0}
+{"Name":"mlc-max_bandwidth-5","Arguments":"--max_bandwidth","Started":"2026-10-14T22:11:09.6234929+05:30","Completed":"2026-10-14T22:13:44.8974122+05:30","ElapsedSeconds":155.27,"ExitCode":0}
+{"Name":"mlc-peak_injection_bandwidth-1","Arguments":"--peak_injection_bandwidth","Started":"2026-10-14T22:13:44.9142637+05:30","Completed":"2026-10-14T22:14:13.1537453+05:30","ElapsedSeconds":28.24,"ExitCode":0}
+{"Name":"mlc-peak_injection_bandwidth-2","Arguments":"--peak_injection_bandwidth","Started":"2026-10-14T22:14:13.4256805+05:30","Completed":"2026-10-14T22:14:41.2926732+05:30","ElapsedSeconds":27.86,"ExitCode":0}
+{"Name":"mlc-peak_injection_bandwidth-3","Arguments":"--peak_injection_bandwidth","Started":"2026-10-14T22:14:41.2926732+05:30","Completed":"2026-10-14T22:15:09.2113926+05:30","ElapsedSeconds":27.91,"ExitCode":0}
+{"Name":"mlc-peak_injection_bandwidth-4","Arguments":"--peak_injection_bandwidth","Started":"2026-10-14T22:15:09.2204522+05:30","Completed":"2026-10-14T22:15:37.1110160+05:30","ElapsedSeconds":27.89,"ExitCode":0}
+{"Name":"mlc-peak_injection_bandwidth-5","Arguments":"--peak_injection_bandwidth","Started":"2026-10-14T22:15:37.1224979+05:30","Completed":"2026-10-14T22:16:04.8447611+05:30","ElapsedSeconds":27.72,"ExitCode":0}
+{"Name":"mlc-loaded_latency-1","Arguments":"--loaded_latency","Started":"2026-10-14T22:16:04.8519122+05:30","Completed":"2026-10-14T22:17:38.1765206+05:30","ElapsedSeconds":93.32,"ExitCode":0}
+{"Name":"mlc-loaded_latency-2","Arguments":"--loaded_latency","Started":"2026-10-14T22:17:38.1825157+05:30","Completed":"2026-10-14T22:19:08.4557012+05:30","ElapsedSeconds":90.27,"ExitCode":0}
+{"Name":"mlc-loaded_latency-3","Arguments":"--loaded_latency","Started":"2026-10-14T22:19:08.4755532+05:30","Completed":"2026-10-14T22:20:40.1064509+05:30","ElapsedSeconds":91.63,"ExitCode":0}
+{"Name":"mlc-loaded_latency-4","Arguments":"--loaded_latency","Started":"2026-10-14T22:20:40.1158075+05:30","Completed":"2026-10-14T22:22:15.9147222+05:30","ElapsedSeconds":95.8,"ExitCode":0}
+{"Name":"mlc-loaded_latency-5","Arguments":"--loaded_latency","Started":"2026-10-14T22:22:15.9188327+05:30","Completed":"2026-10-14T22:23:45.6719664+05:30","ElapsedSeconds":89.75,"ExitCode":0}
+{"Name":"winsat-mem-1","Arguments":"mem -mint 10 -maxt 20 -buffersize 256MB","Started":"2026-10-14T22:23:45.6980720+05:30","Completed":"2026-10-14T22:24:09.6050372+05:30","ElapsedSeconds":23.91,"ExitCode":0}
+{"Name":"winsat-mem-2","Arguments":"mem -mint 10 -maxt 20 -buffersize 256MB","Started":"2026-10-14T22:24:09.6265659+05:30","Completed":"2026-10-14T22:24:32.8863106+05:30","ElapsedSeconds":23.26,"ExitCode":0}
+{"Name":"winsat-mem-3","Arguments":"mem -mint 10 -maxt 20 -buffersize 256MB","Started":"2026-10-14T22:24:32.8928113+05:30","Completed":"2026-10-14T22:24:56.6936152+05:30","ElapsedSeconds":23.8,"ExitCode":0}
+{"Name":"winsat-mem-4","Arguments":"mem -mint 10 -maxt 20 -buffersize 256MB","Started":"2026-10-14T22:24:56.6947195+05:30","Completed":"2026-10-14T22:25:19.8290334+05:30","ElapsedSeconds":23.13,"ExitCode":0}
+{"Name":"winsat-mem-5","Arguments":"mem -mint 10 -maxt 20 -buffersize 256MB","Started":"2026-10-14T22:25:19.8457910+05:30","Completed":"2026-10-14T22:25:43.6618768+05:30","ElapsedSeconds":23.81,"ExitCode":0}

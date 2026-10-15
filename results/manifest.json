@@ -1,0 +1,1005 @@
+{
+  "schema_version": 1,
+  "generated_utc": "2026-10-15T08:34:40.851692+00:00",
+  "files": [
+    {
+      "path": "results/ram/sep-2026-09-10/hardware.json",
+      "source": "ram-results/current_8gb/system.txt",
+      "source_sha256": "5be508cab1c7e7f49bc679de21ea55ea4188cdd25797b79ca86b954cff55f3f3",
+      "output_sha256": "24fb94778bd869fc018a7bbd3910978ea6cf7b3529aa88f0ca28e18383bf975b",
+      "transform": "generated from allowlisted system/CIM fields; identifiers omitted",
+      "bytes": 620,
+      "format": "json"
+    },
+    {
+      "path": "results/ram/sep-2026-09-10/benchmarks/winsat/winsat-mem-1.txt",
+      "source": "ram-results/current_8gb/winsat-elevated/winsat-mem-1.txt",
+      "source_sha256": "36a40e4b1eddc87dfaf2ca5ea8d755e34ab6671c9c9aefcfb643841a4ed652ed",
+      "output_sha256": "054f9320394039cdb8e03663d25ea11d5c7d7e7e1a41fb01175895035ab633eb",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 458,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/sep-2026-09-10/benchmarks/winsat/winsat-mem-2.txt",
+      "source": "ram-results/current_8gb/winsat-elevated/winsat-mem-2.txt",
+      "source_sha256": "7b65c77dc2f4a6d9bd931e55396490f9f9df4f7cd6e8dfc165a24e1d4b785198",
+      "output_sha256": "5ba947d98fa479be1b85b0f47eb2a862be0d799abcea9cf825ab1acf7017b77d",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 458,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/sep-2026-09-10/benchmarks/winsat/winsat-mem-3.txt",
+      "source": "ram-results/current_8gb/winsat-elevated/winsat-mem-3.txt",
+      "source_sha256": "c3d9bdf1f7cf38d5c01314a5a7c1d56ac1d1d23aa7e2d4a640c5d8841e0b9a78",
+      "output_sha256": "873d1e09953487f022c020f43037070ebe9efb3b83bbe1998d8c6765657ae79f",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 458,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/sep-2026-09-10/benchmarks/winsat/winsat-mem-4.txt",
+      "source": "ram-results/current_8gb/winsat-elevated/winsat-mem-4.txt",
+      "source_sha256": "326719f6757ed9f53cb7324a3ee05b05507fe91d34b0f0be370886d07051cc49",
+      "output_sha256": "3ccfd68a926ee33f6e240a1ef3ab1d8a9b4326c693b4cae1bdfd7c7d21eb34d0",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 458,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/sep-2026-09-10/benchmarks/winsat/winsat-mem-5.txt",
+      "source": "ram-results/current_8gb/winsat-elevated/winsat-mem-5.txt",
+      "source_sha256": "c37b92832a7cf2544aa46f53505c417ebc204d72fb16353ad47d4cbd30009e5b",
+      "output_sha256": "333aea6cf784ad18c8072784ca81b5199d32ce695b397f012930d3041a2c99e9",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 458,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/sep-2026-09-10/benchmarks/mlc/idle_latency-1.txt",
+      "source": "ram-results/current_8gb/mlc-elevated/idle_latency-1.txt",
+      "source_sha256": "6ace2c157c535514c9115c8009b4538df01a029d1f51aee8c963fc7ddf1230f3",
+      "output_sha256": "1a8a32ed40f6749396306125df4a9e9f8b9961b84e7eb814926ac7b14ad9a1ff",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 316,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/sep-2026-09-10/benchmarks/mlc/idle_latency-2.txt",
+      "source": "ram-results/current_8gb/mlc-elevated/idle_latency-2.txt",
+      "source_sha256": "28796ed808f59d38da8a51bfb083647513d2fb64eeba2bf8e9a65ba249fe3639",
+      "output_sha256": "64c9411eebde02bac3c9c7dba0240fa803ba9c754f739d5137ce05561db5b66d",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 316,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/sep-2026-09-10/benchmarks/mlc/idle_latency-3.txt",
+      "source": "ram-results/current_8gb/mlc-elevated/idle_latency-3.txt",
+      "source_sha256": "4bf4b51f2e590498c071fd359e1218aa6311a8dd90268fac665fad0a3d34d002",
+      "output_sha256": "509133a9d5da77f8d5f6248a7384a18ff7d2fabadf63d695e0e7fe06c9d06a2e",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 316,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/sep-2026-09-10/benchmarks/mlc/idle_latency-4.txt",
+      "source": "ram-results/current_8gb/mlc-elevated/idle_latency-4.txt",
+      "source_sha256": "78e6c7dad370b8eb4c28349b225bfa59d9e869729121c99c9eabc1217fd4ce04",
+      "output_sha256": "f8f57da9e55920c38b86c86fec282a2334b5f77fd4e5b759ad139274263bfa9c",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 316,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/sep-2026-09-10/benchmarks/mlc/idle_latency-5.txt",
+      "source": "ram-results/current_8gb/mlc-elevated/idle_latency-5.txt",
+      "source_sha256": "d5beb93748bbae04e0a7cec5e4097b5d9d62508712a9ce57971ef07e4f293736",
+      "output_sha256": "a9542d8a30226b0ebb90f3464b176ec9cbbafa2a83bedc8e85aa0546f6edb6ea",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 316,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/sep-2026-09-10/benchmarks/mlc/max_bandwidth-1.txt",
+      "source": "ram-results/current_8gb/mlc-elevated/max_bandwidth-1.txt",
+      "source_sha256": "6502908a3385eb2d0490e6600f459503de47bf41c8c1d35db7f940ce95a5d2aa",
+      "output_sha256": "a2a4c7b6d00c2299395a7860d46cc2f28b6c46ff2664df92f03e40070a1b91a9",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 796,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/sep-2026-09-10/benchmarks/mlc/max_bandwidth-2.txt",
+      "source": "ram-results/current_8gb/mlc-elevated/max_bandwidth-2.txt",
+      "source_sha256": "5ce8af303f54b71830b858d860e9bbb90c37c74e30db3bd784d40ee89f22dcb8",
+      "output_sha256": "adf09af8e3275e2a8f93a7cf3203be21480e2a5fc38b747bf18fdd11f2ccb534",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 796,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/sep-2026-09-10/benchmarks/mlc/max_bandwidth-3.txt",
+      "source": "ram-results/current_8gb/mlc-elevated/max_bandwidth-3.txt",
+      "source_sha256": "c5b688fe04997ff82bc32b0e78cd21e77d8ec9f6a8f5ce8125b6467b59e56acc",
+      "output_sha256": "5a23d22f4afc7039e144f7adae1b142728a11564734d60d387ed03e6f89b2436",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 796,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/sep-2026-09-10/benchmarks/mlc/max_bandwidth-4.txt",
+      "source": "ram-results/current_8gb/mlc-elevated/max_bandwidth-4.txt",
+      "source_sha256": "66c556c4b468225f22d454a27acc44368789169d27c23e0e9e958af8068b0f0f",
+      "output_sha256": "c009c1e7e28681e085d6bbc9de72d2420495ba1597858ce4262c49d8bef18862",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 796,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/sep-2026-09-10/benchmarks/mlc/max_bandwidth-5.txt",
+      "source": "ram-results/current_8gb/mlc-elevated/max_bandwidth-5.txt",
+      "source_sha256": "67e8764d059efd37af372f3f87a861b15314734cb9d621b0b94a3a47bf346b15",
+      "output_sha256": "9d83d658591d97a27137ad885b4e7b8d3931334ab8b485cd449781bd524b5048",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 796,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/sep-2026-09-10/benchmarks/mlc/peak_injection_bandwidth-1.txt",
+      "source": "ram-results/current_8gb/mlc-elevated/peak_injection_bandwidth-1.txt",
+      "source_sha256": "ef5310c1f3018d918b58508ab871c74fcf486f2a9abc6a4834e9ca0369beda69",
+      "output_sha256": "9ff39bb86afaa12e8f80e0b02c01b26de36af57bb1088c631e7dadb8559d98e8",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 713,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/sep-2026-09-10/benchmarks/mlc/peak_injection_bandwidth-2.txt",
+      "source": "ram-results/current_8gb/mlc-elevated/peak_injection_bandwidth-2.txt",
+      "source_sha256": "34539d5341c6e68f754319aaeaa95bcc0a7995e2856c264e04613c5965f976cc",
+      "output_sha256": "5683eba47b7ff65e94ab150040e01f0cc2c1e7091fa5c9662aa9857adeebb932",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 713,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/sep-2026-09-10/benchmarks/mlc/peak_injection_bandwidth-3.txt",
+      "source": "ram-results/current_8gb/mlc-elevated/peak_injection_bandwidth-3.txt",
+      "source_sha256": "dfcb8947a768a1e28b34b881d17b3c6bb511272360363a173828f77906425073",
+      "output_sha256": "472a2880fe226266b8cb8246f3bdc135a0d03445b62efdf805873478c72e5013",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 713,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/sep-2026-09-10/benchmarks/mlc/peak_injection_bandwidth-4.txt",
+      "source": "ram-results/current_8gb/mlc-elevated/peak_injection_bandwidth-4.txt",
+      "source_sha256": "a19c5ee6768aeb252ee05702f058bb3242fca80f4de2e523e0bc93f6a057e6dc",
+      "output_sha256": "dd4babe2092d972c91a7834e82695926c9fef9132f614cca9c0cb145f7b49249",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 713,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/sep-2026-09-10/benchmarks/mlc/peak_injection_bandwidth-5.txt",
+      "source": "ram-results/current_8gb/mlc-elevated/peak_injection_bandwidth-5.txt",
+      "source_sha256": "8e78bd1618476f4cc758a8e65c57381c65b82803f3ebc0e138d4d896229d7417",
+      "output_sha256": "e8d168db30fc6f76b5339e85da7a2d10a2707d7e49fc1763870aa57b56342579",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 713,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/sep-2026-09-10/benchmarks/mlc/loaded_latency-1.txt",
+      "source": "ram-results/current_8gb/mlc-elevated/loaded_latency-1.txt",
+      "source_sha256": "fa5eb9b462b9e5f472c5686781c466a83050e8705668baf9b5189076f74aff84",
+      "output_sha256": "b72a090b6156904b618ea0d8e599e32c7427bd1cb9f7985364c33d2195182eef",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 968,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/sep-2026-09-10/benchmarks/mlc/loaded_latency-2.txt",
+      "source": "ram-results/current_8gb/mlc-elevated/loaded_latency-2.txt",
+      "source_sha256": "7309e6b40d631e2077b9c5955ab319e6a9765cb034d5b40ce6b7e4a756431e4d",
+      "output_sha256": "9baf6cd1b7333b1fe34fb494645acb2c618d8c2c6ec4f867557e75481fc152ed",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 968,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/sep-2026-09-10/benchmarks/mlc/loaded_latency-3.txt",
+      "source": "ram-results/current_8gb/mlc-elevated/loaded_latency-3.txt",
+      "source_sha256": "2f0eea946a4ccd985a4929efa694405e82dd9579c3e51538ec1861e5fdd892b2",
+      "output_sha256": "c10c675400b0ff7306bfe6c0e66243ea6d94891f6e2af8085e9aa5de5d82f379",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 968,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/sep-2026-09-10/benchmarks/mlc/loaded_latency-4.txt",
+      "source": "ram-results/current_8gb/mlc-elevated/loaded_latency-4.txt",
+      "source_sha256": "475d7e1e54c38a96a9f88b22fd5e959b9497c443d3fd6d3a50ebf278e745a9ec",
+      "output_sha256": "23350ff2e7f27a4fb426d6692d621c94a58c03e63a7bc72a4fb608c89f30005d",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 968,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/sep-2026-09-10/benchmarks/mlc/loaded_latency-5.txt",
+      "source": "ram-results/current_8gb/mlc-elevated/loaded_latency-5.txt",
+      "source_sha256": "d563a7112950d93ba6aa60c12a99e528f448fae9fd509b28d58f7bf74de9d641",
+      "output_sha256": "1cc51b0191caa6de394f805fa951401f53af5ef3d7a16340cb08dd97d4c7f4ed",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 968,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/sep-2026-09-10/benchmarks/mlc/run-info.txt",
+      "source": "ram-results/current_8gb/mlc-elevated/run-info.txt",
+      "source_sha256": "4582334398c573669323d9a91a94a8ce2c21d546a2242e15f12eb07d0e81f8bf",
+      "output_sha256": "4c7a3d54c8c5f85810554ca8270e6da98bb31aced00f0eef8a6be8cdf03b88bd",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 313,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/sep-2026-09-10/telemetry.csv",
+      "source": "ram-results/current_8gb/telemetry.csv",
+      "source_sha256": "729ad843ba278652593b008c34b53b75f68f1717694591d03263172e3d09b4e6",
+      "output_sha256": "55bb54d7b827fac6b5f8eea67f2aecc36ffb9e25b33fac981def914512a74416",
+      "transform": "only memory telemetry columns retained; no process inventory",
+      "bytes": 76375,
+      "format": "csv"
+    },
+    {
+      "path": "results/ram/sep-2026-09-10/paging-pressure.csv",
+      "source": "ram-results/current_8gb/paging-pressure.csv",
+      "source_sha256": "1ccb55a8b8a424bb9b53e363a0bc1a1390dcd68d3ccdfb07b2493261673ef462",
+      "output_sha256": "4197c10c5e3ab52d15c907c2171f7953ed22842d2152fbd72c19acf9a38f4e26",
+      "transform": "counter paths rewritten to HOST; raw counter structure and units retained",
+      "bytes": 43076,
+      "format": "csv"
+    },
+    {
+      "path": "results/ram/sep-2026-09-10/legacy-run-summary.txt",
+      "source": "ram-results/current_8gb/run-summary.txt",
+      "source_sha256": "2987a3e207826ada1e1c811361efe566c18d6fa17a7d617dada7e4e8cde3148f",
+      "output_sha256": "ab8e791d4c1f70f0cf4a0937a0545553f745b284930d91680e175685bd3fc87c",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 302,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/single-8gb-2026-10-14/hardware.json",
+      "source": "ram-results/single_8gb_20261014/system.txt",
+      "source_sha256": "e9179bbca31c3e35d2bdb7cccc5a720bad9d8e8e54b1863f52fffb04cc29225a",
+      "output_sha256": "96223a379a02538478c748d16de98f5aaeb648e099e3cf841ae1c313d51fbcef",
+      "transform": "generated from allowlisted system/CIM fields; identifiers omitted",
+      "bytes": 468,
+      "format": "json"
+    },
+    {
+      "path": "results/ram/single-8gb-2026-10-14/benchmarks/winsat/winsat-mem-1.txt",
+      "source": "ram-results/single_8gb_20261014/elevated/winsat-mem-1.txt",
+      "source_sha256": "0b284badbef7a16f817c4311c8dd2d6df61cf7a0c130316102af5339f362b998",
+      "output_sha256": "db6ac9a425cd3e44e8ec105b2f80d4a77c5b0ed3e51e60e27ead6e2cd7d96b8f",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 674,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/single-8gb-2026-10-14/benchmarks/winsat/winsat-mem-2.txt",
+      "source": "ram-results/single_8gb_20261014/elevated/winsat-mem-2.txt",
+      "source_sha256": "97eaf8a352710d67411f0e16dffdffbd4020916a11a1eaaf71d58fb29b25ee12",
+      "output_sha256": "5d432794f102f2bd7150764e4305cd01de144c17353c2efedfbd144c7378fe19",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 458,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/single-8gb-2026-10-14/benchmarks/winsat/winsat-mem-3.txt",
+      "source": "ram-results/single_8gb_20261014/elevated/winsat-mem-3.txt",
+      "source_sha256": "73eb9c0bbe5b523efe623c50493aafbf6c3c02b363b141959b5f4d2d6427204e",
+      "output_sha256": "10b6333803acfaeaa68e50307ef676d93d05c476c9c9ad60d6be1ab8003d6856",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 458,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/single-8gb-2026-10-14/benchmarks/winsat/winsat-mem-4.txt",
+      "source": "ram-results/single_8gb_20261014/elevated/winsat-mem-4.txt",
+      "source_sha256": "afd5b3596ed0b435c485a060d2d684301d5addd7f2bd149c2565cf4e4e1bb2e1",
+      "output_sha256": "c08fe7d6375948a5bebc368ed0445b589efe07949fd5633d86e9ea097f1c8bb9",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 458,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/single-8gb-2026-10-14/benchmarks/winsat/winsat-mem-5.txt",
+      "source": "ram-results/single_8gb_20261014/elevated/winsat-mem-5.txt",
+      "source_sha256": "c20717584139c8dd084560e08e97c8c5bc1f96201504a8a79518fe46f241f470",
+      "output_sha256": "1b9caf12fac96eba918fe7b23e9c6c7f503b3d8c4c770bc572eeae1f879cffe0",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 458,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/single-8gb-2026-10-14/benchmarks/mlc/idle_latency-1.txt",
+      "source": "ram-results/single_8gb_20261014/elevated/mlc-idle_latency-1.txt",
+      "source_sha256": "5c36eef236fab384b2ef461509d3a11e56cea7f9639dc3ca9cb4aa689074fd8a",
+      "output_sha256": "66450147db899b287c27216de531f20766e5833270c0d7ad8d9edc31201b1732",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 316,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/single-8gb-2026-10-14/benchmarks/mlc/idle_latency-2.txt",
+      "source": "ram-results/single_8gb_20261014/elevated/mlc-idle_latency-2.txt",
+      "source_sha256": "4a92061a10b60b83a7c507681afe1e565eaadab922b71080c1dda3e1dfd35fc5",
+      "output_sha256": "827c2daf7610f76c9b80dd1761ad1f0833137e85f23458192367499e2993bb02",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 316,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/single-8gb-2026-10-14/benchmarks/mlc/idle_latency-3.txt",
+      "source": "ram-results/single_8gb_20261014/elevated/mlc-idle_latency-3.txt",
+      "source_sha256": "bdca00d41508b259e67a0a199e172de439ca7392f232b9558c9895927bd939dd",
+      "output_sha256": "c2daa67205504a9d99963fbbe52f302d297d339ae4d8e3eee4a189cea7950f5b",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 316,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/single-8gb-2026-10-14/benchmarks/mlc/idle_latency-4.txt",
+      "source": "ram-results/single_8gb_20261014/elevated/mlc-idle_latency-4.txt",
+      "source_sha256": "b29c1a9240e48b868479ac00f6af276f821b87dec267d0688ba981e6d753d6c5",
+      "output_sha256": "8785c7226a76e15a3dcba065ba463b9dc91b8c2577b658c79a547480134de168",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 316,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/single-8gb-2026-10-14/benchmarks/mlc/idle_latency-5.txt",
+      "source": "ram-results/single_8gb_20261014/elevated/mlc-idle_latency-5.txt",
+      "source_sha256": "189a695176688a8b1c7821b0d9aa6a5bab34f73fe8374e9ed44b7f41da74c0df",
+      "output_sha256": "cea29200c192dece588fd32de090806ee98b009c15a0a4d00c10c1afe75cc462",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 316,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/single-8gb-2026-10-14/benchmarks/mlc/max_bandwidth-1.txt",
+      "source": "ram-results/single_8gb_20261014/elevated/mlc-max_bandwidth-1.txt",
+      "source_sha256": "32f25ab06d969c3c8e1320f0ab303dce8bbcaee31e5a59fed4e727d6c08b588c",
+      "output_sha256": "daf9de8af4b8fca9edfe0f212d9824390ab536cfbc1c6684b5cff190bb73bb4f",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 796,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/single-8gb-2026-10-14/benchmarks/mlc/max_bandwidth-2.txt",
+      "source": "ram-results/single_8gb_20261014/elevated/mlc-max_bandwidth-2.txt",
+      "source_sha256": "fc566ca6b589e6c8109c707480bb20730ca64f892c3104d0817a918e0e8fc531",
+      "output_sha256": "0413250a6d4f72cb02e71045582a57b47001632d87f735370b864a11306152ec",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 796,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/single-8gb-2026-10-14/benchmarks/mlc/max_bandwidth-3.txt",
+      "source": "ram-results/single_8gb_20261014/elevated/mlc-max_bandwidth-3.txt",
+      "source_sha256": "4de17230e486a2629a69f5a4629797e04144a530a415cdd5e1a5ce74325f3746",
+      "output_sha256": "c48e404ac8aaccfb717ede8d60396b3fb51e4226a831cb27fed530ce9bc52ad6",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 796,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/single-8gb-2026-10-14/benchmarks/mlc/max_bandwidth-4.txt",
+      "source": "ram-results/single_8gb_20261014/elevated/mlc-max_bandwidth-4.txt",
+      "source_sha256": "c255d92a5bbd576a454ae779225d17eb4a0bcdccbbadfa3fc5be3df79eddc37d",
+      "output_sha256": "7868168aa1ec8a8f273f36dada424c4c940d8a3664333818fa158ed4156a3179",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 796,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/single-8gb-2026-10-14/benchmarks/mlc/max_bandwidth-5.txt",
+      "source": "ram-results/single_8gb_20261014/elevated/mlc-max_bandwidth-5.txt",
+      "source_sha256": "887b0dafb7dd63793bfd8e1575a4c9e94911d9c39f47093a55b602296374e7f3",
+      "output_sha256": "f7512e933258d18a4beed3b4a30c2d019fda2b7049e26f4e78e2fd14c2f78c8d",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 796,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/single-8gb-2026-10-14/benchmarks/mlc/peak_injection_bandwidth-1.txt",
+      "source": "ram-results/single_8gb_20261014/elevated/mlc-peak_injection_bandwidth-1.txt",
+      "source_sha256": "c04f6b70145799cf964e0adcf079b2ce0edf0633e6eba56780e8f4713b75779e",
+      "output_sha256": "c877b946f0aff85fca19db010d9f747a848bef537d5c6c45b9d31d03f4b2c3a6",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 713,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/single-8gb-2026-10-14/benchmarks/mlc/peak_injection_bandwidth-2.txt",
+      "source": "ram-results/single_8gb_20261014/elevated/mlc-peak_injection_bandwidth-2.txt",
+      "source_sha256": "660f9d1f957b73ea325551aab27672a428440797bd0dfa820caceea91b73dc5d",
+      "output_sha256": "c6d761773512eed08590d41fea1613af85a579c8955e54d5343996f290cdb62d",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 713,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/single-8gb-2026-10-14/benchmarks/mlc/peak_injection_bandwidth-3.txt",
+      "source": "ram-results/single_8gb_20261014/elevated/mlc-peak_injection_bandwidth-3.txt",
+      "source_sha256": "bab118aa89b23856d36a9e35f2f92795d756352f6cbec4360cfcde150a996159",
+      "output_sha256": "4dc0080265a7242957738ce30573286a1068ac8bb7bf5a52bdc6c9dbacceb301",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 713,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/single-8gb-2026-10-14/benchmarks/mlc/peak_injection_bandwidth-4.txt",
+      "source": "ram-results/single_8gb_20261014/elevated/mlc-peak_injection_bandwidth-4.txt",
+      "source_sha256": "fa85ce04fd6a31bb4bfd40198baf6cbd6cc5f4e78d054c304ea1aef6f956bbf5",
+      "output_sha256": "c44af822729bd45e2160d9efd64a5c63a0ce981b60804dcb19a53f3fa1b00d14",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 713,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/single-8gb-2026-10-14/benchmarks/mlc/peak_injection_bandwidth-5.txt",
+      "source": "ram-results/single_8gb_20261014/elevated/mlc-peak_injection_bandwidth-5.txt",
+      "source_sha256": "93e1e8ccc39e199c84c56854798580a0c824ad3bee269ee559243ba0150289fc",
+      "output_sha256": "75795dfbec336bdde640bf7adec5e3bbada9096c8b56bd2d4a3ab9d2e6020086",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 713,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/single-8gb-2026-10-14/benchmarks/mlc/loaded_latency-1.txt",
+      "source": "ram-results/single_8gb_20261014/elevated/mlc-loaded_latency-1.txt",
+      "source_sha256": "874b392143ed686b53f62dc2842f2760dc74818b9977d92e58b44f6e4d23e443",
+      "output_sha256": "1bedbe87ef0ef8ae71cd3f04d4abe8dcfaa751201dc91d9c55652e7090279983",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 968,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/single-8gb-2026-10-14/benchmarks/mlc/loaded_latency-2.txt",
+      "source": "ram-results/single_8gb_20261014/elevated/mlc-loaded_latency-2.txt",
+      "source_sha256": "c08902176dfd3ebacade0b44afbb8ed65e75a1859e2353b54c9d87b331f07184",
+      "output_sha256": "6a48dae9b7225fc546f63b227d13414900ffba2d591c2bb08b56ede14e9bd05e",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 968,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/single-8gb-2026-10-14/benchmarks/mlc/loaded_latency-3.txt",
+      "source": "ram-results/single_8gb_20261014/elevated/mlc-loaded_latency-3.txt",
+      "source_sha256": "ec70a9842512c247cc41bdd0dfa0a22cfd5942a181bf0d8f6fa7f7769a4a09f8",
+      "output_sha256": "3a64bf626a7b692bb9b2c170ffd5f4349a073e2ebe996469a8a9907f06848850",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 968,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/single-8gb-2026-10-14/benchmarks/mlc/loaded_latency-4.txt",
+      "source": "ram-results/single_8gb_20261014/elevated/mlc-loaded_latency-4.txt",
+      "source_sha256": "b2a10ad52ab672a6913c38ff0b04977afbf8db116b816b65c1f37bd0fb161219",
+      "output_sha256": "de315a2e3a2926fc5534a0c3486bc8448ec33ed350d99f58e0535ff3ddb254e9",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 968,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/single-8gb-2026-10-14/benchmarks/mlc/loaded_latency-5.txt",
+      "source": "ram-results/single_8gb_20261014/elevated/mlc-loaded_latency-5.txt",
+      "source_sha256": "c0b0e096cddd7bb11f11d8574ac175ab11b45511f6cf77d42fa10252e626ea49",
+      "output_sha256": "173c1879e00fe72884a78beafd3817bc5252a811ee081905e39d5d4691b526e0",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 968,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/single-8gb-2026-10-14/benchmarks/run-status.jsonl",
+      "source": "ram-results/single_8gb_20261014/elevated/run-status.jsonl",
+      "source_sha256": "f0133cd29692d873d88ab72bea7197af7d4960fcb4380f201ef7668933d4171a",
+      "output_sha256": "49b32ab571fe3f4f96f75427ffdcab35b061562a164e969a00af3b1db8d50c05",
+      "transform": "allowlisted status fields only; executable/output paths omitted",
+      "bytes": 4967,
+      "format": "jsonl"
+    },
+    {
+      "path": "results/ram/single-8gb-2026-10-14/benchmarks/run-info.json",
+      "source": "ram-results/single_8gb_20261014/elevated/run-info.json",
+      "source_sha256": "37747a09e193b92dcf31241bccab3b398fd841c51139a5640c781349b4a1db55",
+      "output_sha256": "bb4caaa3d4c6088d0a14b894684540c13b5866a57a2c598b954cfb9f25805267",
+      "transform": "allowlisted metadata; local executable and destination paths omitted",
+      "bytes": 299,
+      "format": "json"
+    },
+    {
+      "path": "results/ram/single-8gb-2026-10-14/telemetry.csv",
+      "source": "ram-results/single_8gb_20261014/telemetry.csv",
+      "source_sha256": "10107cdfbc126bb18dbb7557c5e861be22b9c6e9dcb47a00581c9082fbc3f6ff",
+      "output_sha256": "63ec787225d2389b00ab183d08585c0ef717778c2d480854afb32abe902d70de",
+      "transform": "memory-only telemetry; host counter path rewritten to HOST where present",
+      "bytes": 74820,
+      "format": "csv"
+    },
+    {
+      "path": "results/ram/single-8gb-2026-10-14/paging-pressure.csv",
+      "source": "ram-results/single_8gb_20261014/paging-pressure.csv",
+      "source_sha256": "fd86acfa654bec86d0bd26a893bdd3d85e5b75dd82abfe83c1213961cb16cff7",
+      "output_sha256": "95c6e29b77ea64a732656d218c73b4b8c779ff2ef6c0671392b427d6aeae2a9a",
+      "transform": "memory-only telemetry; host counter path rewritten to HOST where present",
+      "bytes": 43559,
+      "format": "csv"
+    },
+    {
+      "path": "results/ram/single-8gb-2026-10-14/memory-screen.json",
+      "source": "ram-validation-2026-10-14/user-mode-memory-screen-20261014-215236.json",
+      "source_sha256": "18391296622e5cf38122c8ed3e51bc650edb07d66c57999b6f4dca24a8f7cf0f",
+      "output_sha256": "4956dc12a2036d12e333084a12d17674cc55f358223b202478bb654cddd2a8b5",
+      "transform": "only test scope, aggregate result, and limitations retained",
+      "bytes": 807,
+      "format": "json"
+    },
+    {
+      "path": "results/ram/single-8gb-2026-10-14/memory-health-observations.json",
+      "source": "ram-validation-2026-10-14/report.md",
+      "source_sha256": "d992873a3b933b06c9658f6dcbe8848a434c8bef945a98c7f84f8011b5514970",
+      "output_sha256": "e93a9737d8cdea1f79cb272166849e46102f2ef66b8c3f4f7d304d989d6104d3",
+      "transform": "aggregate event/result summary only; no raw event messages",
+      "bytes": 717,
+      "format": "json"
+    },
+    {
+      "path": "results/ram/8gb-plus-4gb-2026-10-15/hardware.json",
+      "source": "ram-results/8gb_plus_4gb_20261015/system.txt",
+      "source_sha256": "8ef01762ccdd8c3c9272a71e0f9d4c2e1ad8b0da52486a4c02e898db675a706d",
+      "output_sha256": "e7bc5e4600cd3017fa7e05008376e05f58b81f80fc6b9b70d2a0d34c14b8ded6",
+      "transform": "generated from allowlisted system/CIM fields; identifiers omitted",
+      "bytes": 620,
+      "format": "json"
+    },
+    {
+      "path": "results/ram/8gb-plus-4gb-2026-10-15/benchmarks/winsat/winsat-mem-1.txt",
+      "source": "ram-results/8gb_plus_4gb_20261015/elevated/winsat-mem-1.txt",
+      "source_sha256": "cd04184ed2f2d3cf4ecbd5f3b87e9ed311d30d4070e6cb178c7e6517e0ae14a4",
+      "output_sha256": "8c25186188e6ede494327412dc8989fb6f95a8c67ba56eeb25337b83029e92d3",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 458,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/8gb-plus-4gb-2026-10-15/benchmarks/winsat/winsat-mem-2.txt",
+      "source": "ram-results/8gb_plus_4gb_20261015/elevated/winsat-mem-2.txt",
+      "source_sha256": "3be4a2eb7314881e06229bd71ba84d2880ea7f6031e98b9e696761d51d13abce",
+      "output_sha256": "c12c24d67e0fcef13f81c48286f53b51594bfae11d194387d329929e3c9eb0fd",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 458,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/8gb-plus-4gb-2026-10-15/benchmarks/winsat/winsat-mem-3.txt",
+      "source": "ram-results/8gb_plus_4gb_20261015/elevated/winsat-mem-3.txt",
+      "source_sha256": "8ba75a0be8e57de087af31a8469c3a775f3daef24b6eed75f4b2dcf5e79c193d",
+      "output_sha256": "fed2b88cd0b89c7546bc555fdea457d3063797ab053d404d827dc41399a9368a",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 458,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/8gb-plus-4gb-2026-10-15/benchmarks/winsat/winsat-mem-4.txt",
+      "source": "ram-results/8gb_plus_4gb_20261015/elevated/winsat-mem-4.txt",
+      "source_sha256": "bb962086db031fbb458821f6e559adc7482041d747d3052fb329eec3c5597bcb",
+      "output_sha256": "bef27586b085a475287616cf0307bb42bfe974aff1111ac628add9e0a8588564",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 458,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/8gb-plus-4gb-2026-10-15/benchmarks/winsat/winsat-mem-5.txt",
+      "source": "ram-results/8gb_plus_4gb_20261015/elevated/winsat-mem-5.txt",
+      "source_sha256": "da9199d735c41d5ddc2b0b407f65f9992ca1979a1dd2fda7ecf628b87c1c2f7c",
+      "output_sha256": "40d56c844a7390cf4ccda44a156541157416e6a17108b442f4776510e6a2edbf",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 458,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/8gb-plus-4gb-2026-10-15/benchmarks/mlc/idle_latency-1.txt",
+      "source": "ram-results/8gb_plus_4gb_20261015/elevated/mlc-idle_latency-1.txt",
+      "source_sha256": "0fc91cc8fa6ea04ee7d2aff3327d862660af1b6c57738b507c38a7c607bdd5cb",
+      "output_sha256": "e3fdda5bb3df0ee207bf7e9b9934bfdfaffff4d5428294821aacbf55c0f649b6",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 317,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/8gb-plus-4gb-2026-10-15/benchmarks/mlc/idle_latency-2.txt",
+      "source": "ram-results/8gb_plus_4gb_20261015/elevated/mlc-idle_latency-2.txt",
+      "source_sha256": "03c1af39bd9afb48ec4bee475ae77dff904f235af622ae70a908443410af0479",
+      "output_sha256": "ddb554ebd1c6b1ba380111d7d899bb8e01fa817f894b958aeb35ce89c0e3afc3",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 317,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/8gb-plus-4gb-2026-10-15/benchmarks/mlc/idle_latency-3.txt",
+      "source": "ram-results/8gb_plus_4gb_20261015/elevated/mlc-idle_latency-3.txt",
+      "source_sha256": "c605880cc7f4839d146e81ad8ebf2e197ea9c966170276fcd25c022cb58fa849",
+      "output_sha256": "dca29ba061e454ade2d4e8edd41fdb60b124bd4f74337fc20a04561fb0a31118",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 317,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/8gb-plus-4gb-2026-10-15/benchmarks/mlc/idle_latency-4.txt",
+      "source": "ram-results/8gb_plus_4gb_20261015/elevated/mlc-idle_latency-4.txt",
+      "source_sha256": "90e7b0cf5bfd2f2591f106f3605c4f0b993d1d6d3666b46ed5777b718f2ea08e",
+      "output_sha256": "15dbb0e6ca1c2c8cf8359434b8cf7b0aa796655234cd43271c2626178c3e341c",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 317,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/8gb-plus-4gb-2026-10-15/benchmarks/mlc/idle_latency-5.txt",
+      "source": "ram-results/8gb_plus_4gb_20261015/elevated/mlc-idle_latency-5.txt",
+      "source_sha256": "2edd81f7c5cd00925f835803c146e2397adb9821f56e5615c15706fa77abcfe4",
+      "output_sha256": "fbd733fc7098731cd168018fa16a4208c7ffadef3df03ad6b9529196e1d81781",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 317,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/8gb-plus-4gb-2026-10-15/benchmarks/mlc/max_bandwidth-1.txt",
+      "source": "ram-results/8gb_plus_4gb_20261015/elevated/mlc-max_bandwidth-1.txt",
+      "source_sha256": "7d24f82a85885ce178cef6498c24711b8b9022812c4905a6bfa6653fc2ab120f",
+      "output_sha256": "4328a6b38ae12b59bc14bdf925606974baee085b21fe85ba1023045952defb37",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 796,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/8gb-plus-4gb-2026-10-15/benchmarks/mlc/max_bandwidth-2.txt",
+      "source": "ram-results/8gb_plus_4gb_20261015/elevated/mlc-max_bandwidth-2.txt",
+      "source_sha256": "be189638465b69173e219ad957e60c77687a26848e83ee89fbcc0a6c7d43bd57",
+      "output_sha256": "9efb0b15950db5d4304bfcf0688d6d0f4ab664a2e5537cd692f897f12f9e6193",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 796,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/8gb-plus-4gb-2026-10-15/benchmarks/mlc/max_bandwidth-3.txt",
+      "source": "ram-results/8gb_plus_4gb_20261015/elevated/mlc-max_bandwidth-3.txt",
+      "source_sha256": "d524a122f521c0f765cdbb5fefbb0505d1eb5801075b4c67393583f651357b24",
+      "output_sha256": "29a7422a27acd46276968bf91512e0cc49e372b640ca9c451a0d951d9db16c49",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 796,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/8gb-plus-4gb-2026-10-15/benchmarks/mlc/max_bandwidth-4.txt",
+      "source": "ram-results/8gb_plus_4gb_20261015/elevated/mlc-max_bandwidth-4.txt",
+      "source_sha256": "fe0b2795250f8b84b39a61dfa82097edb586f62c172c27b09d97f5e6e0d44829",
+      "output_sha256": "c4210bf136795d75001b62b32a4189d75eb08d7dcfc6e1429f721ad830dcb47e",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 796,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/8gb-plus-4gb-2026-10-15/benchmarks/mlc/max_bandwidth-5.txt",
+      "source": "ram-results/8gb_plus_4gb_20261015/elevated/mlc-max_bandwidth-5.txt",
+      "source_sha256": "6db7d07ca849cbb56b78d1919b1f4fe859ba83a7d2fbbed6cb88a919805ce6bf",
+      "output_sha256": "1907ee0832e7cf6abfc5d2fc611a25e97ac56a886cba7b3969190e2d417041ee",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 796,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/8gb-plus-4gb-2026-10-15/benchmarks/mlc/peak_injection_bandwidth-1.txt",
+      "source": "ram-results/8gb_plus_4gb_20261015/elevated/mlc-peak_injection_bandwidth-1.txt",
+      "source_sha256": "e911e075e04220858aea92464ef99f4ce9707e2b0ccc08b5b86ce454f3530106",
+      "output_sha256": "5cb656c8262fda93c4930249145aa3233e728f407633210105667b0ba66ba61c",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 713,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/8gb-plus-4gb-2026-10-15/benchmarks/mlc/peak_injection_bandwidth-2.txt",
+      "source": "ram-results/8gb_plus_4gb_20261015/elevated/mlc-peak_injection_bandwidth-2.txt",
+      "source_sha256": "e92fef88772857ad0aebdbf311a45f28167008bb61b11172bcbff500822eb712",
+      "output_sha256": "25f93813bbdd7a2c871486ef83ae8918b01dee7693fe6d5f50c2467fc13973e8",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 713,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/8gb-plus-4gb-2026-10-15/benchmarks/mlc/peak_injection_bandwidth-3.txt",
+      "source": "ram-results/8gb_plus_4gb_20261015/elevated/mlc-peak_injection_bandwidth-3.txt",
+      "source_sha256": "72c51159d87199088ee6362a7cadbd8d59b6477a2d129b117a6a0aa85e76606a",
+      "output_sha256": "85337b5c1ad2d0ce4ce0e6c1b53adf5b8499c5d659e2d6a6a0479d15230d36e6",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 713,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/8gb-plus-4gb-2026-10-15/benchmarks/mlc/peak_injection_bandwidth-4.txt",
+      "source": "ram-results/8gb_plus_4gb_20261015/elevated/mlc-peak_injection_bandwidth-4.txt",
+      "source_sha256": "a0a47622b2fcc8c566fc67f7eea0f085530cd0fcb979bd2ae55e03e6a1c78b3e",
+      "output_sha256": "4ec606b05df4207a0ab9b8a04c95f185a358eb811f4d9330fa24acc2193f1fe4",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 713,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/8gb-plus-4gb-2026-10-15/benchmarks/mlc/peak_injection_bandwidth-5.txt",
+      "source": "ram-results/8gb_plus_4gb_20261015/elevated/mlc-peak_injection_bandwidth-5.txt",
+      "source_sha256": "737b469ef1b695009a063c657438038d2607cd259d7c7ec7755aae55e85a5ce3",
+      "output_sha256": "eef0dd76b34f9bd3ed325bc1101d0480173a403876a93dea52131de2b2c2aff9",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 713,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/8gb-plus-4gb-2026-10-15/benchmarks/mlc/loaded_latency-1.txt",
+      "source": "ram-results/8gb_plus_4gb_20261015/elevated/mlc-loaded_latency-1.txt",
+      "source_sha256": "48b803475f9399fd2b6fec9a2ccb20296005a09ab0cad74667bb4836fec43bef",
+      "output_sha256": "0f43f485f44b85f30f6010249a931f972fbe843d82d1f083b9828ce29759b293",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 968,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/8gb-plus-4gb-2026-10-15/benchmarks/mlc/loaded_latency-2.txt",
+      "source": "ram-results/8gb_plus_4gb_20261015/elevated/mlc-loaded_latency-2.txt",
+      "source_sha256": "31739884fe0e3cc9f7b927544965fe370080c86cd7e7483438677b320b3d456b",
+      "output_sha256": "612f40abe6c9445ac9f689e66818579e7e02d39fde3c262fda43b3ee1604a758",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 968,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/8gb-plus-4gb-2026-10-15/benchmarks/mlc/loaded_latency-3.txt",
+      "source": "ram-results/8gb_plus_4gb_20261015/elevated/mlc-loaded_latency-3.txt",
+      "source_sha256": "1e1fc7cbf869d181324f76a660e11669af0226ec90510258424220040aa9e62d",
+      "output_sha256": "ad1e78928f728b29deaef77920e3ee8b1dab956bbe0dd5777da34495ab027c2c",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 968,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/8gb-plus-4gb-2026-10-15/benchmarks/mlc/loaded_latency-4.txt",
+      "source": "ram-results/8gb_plus_4gb_20261015/elevated/mlc-loaded_latency-4.txt",
+      "source_sha256": "09a0d5f36b6acef718f5fe74d8d8a69faa6a2d9b4012d6efd109265bd497b0c9",
+      "output_sha256": "7f5de34f0f8984f115a4982f96cc7e5c443852652a5f1de0f78e8f1c527b7591",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 968,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/8gb-plus-4gb-2026-10-15/benchmarks/mlc/loaded_latency-5.txt",
+      "source": "ram-results/8gb_plus_4gb_20261015/elevated/mlc-loaded_latency-5.txt",
+      "source_sha256": "61c9c0df6d4b4494f8d963fe8101ac97b001c42ed07e93c189a307a53d8c807b",
+      "output_sha256": "c1dc61e305779ca4ba6bfc2708ac2a1b23b7a99a88cf5538743fabbac6365a71",
+      "transform": "allowlisted text copy; local paths and identifiers redacted",
+      "bytes": 968,
+      "format": "txt"
+    },
+    {
+      "path": "results/ram/8gb-plus-4gb-2026-10-15/benchmarks/run-status.jsonl",
+      "source": "ram-results/8gb_plus_4gb_20261015/elevated/run-status.jsonl",
+      "source_sha256": "741c9b8afd2ccfac6c74545c7724d8e8bd9e59464c7ccd91b288240543742240",
+      "output_sha256": "de839906c630c6b74bfa45e015e966509f0db03a6f7dd9006c18a03572299838",
+      "transform": "allowlisted status fields only; executable/output paths omitted",
+      "bytes": 4964,
+      "format": "jsonl"
+    },
+    {
+      "path": "results/ram/8gb-plus-4gb-2026-10-15/benchmarks/run-info.json",
+      "source": "ram-results/8gb_plus_4gb_20261015/elevated/run-info.json",
+      "source_sha256": "2266fa30cf6df069a8a1cb46deabd802bdb4af1d96418dcfdd342fe283900f4a",
+      "output_sha256": "e24aaf2ae1ffb5b139fdb580406e60cb773ab9c5d509f38fd3880882f079bb84",
+      "transform": "allowlisted metadata; local executable and destination paths omitted",
+      "bytes": 299,
+      "format": "json"
+    },
+    {
+      "path": "results/ram/8gb-plus-4gb-2026-10-15/paging-pressure.csv",
+      "source": "ram-results/8gb_plus_4gb_20261015/paging-pressure.csv",
+      "source_sha256": "0ef1aa04a2ea173bc93d5050d81e4f3e403056c3ed17cbc33cb9bafbef69a0f2",
+      "output_sha256": "172c9f474da28305cd79ff6da741a40654ded518959dd27c88f9cbfdc39d774b",
+      "transform": "memory-only telemetry; host counter path rewritten to HOST where present",
+      "bytes": 43985,
+      "format": "csv"
+    },
+    {
+      "path": "results/ram/benchmark-comparison-2026-10-15.md",
+      "source": "ram-validation-2026-10-15/report.md",
+      "source_sha256": "41e0c6a51c5c10c32b13bf6ba3a66f90fcf37926aa59a090061ec7aae93f5f64",
+      "output_sha256": "4a72291f17138a8860245c2e8bb63a0ae8972067e5288b4f173e77be7bb71da1",
+      "transform": "curated benchmark section from reviewed report; local links removed; descriptive statistics retained",
+      "bytes": 10803,
+      "format": "md"
+    },
+    {
+      "path": "results/workload/netflix-codex-12gb-2026-10-15/telemetry.csv",
+      "source": "ram-results/netflix_codex_12gb_20261015_133635/workload.csv",
+      "source_sha256": "69006b9bd2ca09daa1b104d27d14d75aaecfe4c8dcaa939a0af2063fb888cc11",
+      "output_sha256": "7852f4d1796a1c9591d00f07e8e52c4d69f2ffd964365c2fb179849ce96deaa4",
+      "transform": "counter-only workload samples; process lists, titles, PIDs, and host identity excluded",
+      "bytes": 29617,
+      "format": "csv"
+    },
+    {
+      "path": "results/workload/netflix-codex-12gb-2026-10-15/summary.json",
+      "source": "ram-results/netflix_codex_12gb_20261015_133635/workload-summary.json",
+      "source_sha256": "1c7d2bfa622b636eed3913cda5114436eb32b70070629f067741570a0f730765",
+      "output_sha256": "b153360233c38b761dab2671fe82385466558b147ee07af092a29a875f371cae",
+      "transform": "allowlisted counter aggregates and workload context; source paths omitted",
+      "bytes": 1698,
+      "format": "json"
+    },
+    {
+      "path": "results/workload/netflix-codex-12gb-2026-10-15/user-observation.json",
+      "source": "ram-results/netflix_codex_12gb_20261015_133635/user-reported-observation.json",
+      "source_sha256": "d91a73d6c3862b8f96d6224ffe14bd5d432fba24e12a0d53fbfb58a6ca617a7e",
+      "output_sha256": "1732033e3bf3bf09f92203f9e39c423c3e6ebb24f5056ff61ad9a0ba48d84928",
+      "transform": "observation statement only; identities beyond app names and sensor limits retained",
+      "bytes": 282,
+      "format": "json"
+    },
+    {
+      "path": "results/workload/netflix-codex-12gb-2026-10-15/process-groups-start.json",
+      "source": "ram-results/netflix_codex_12gb_20261015_133635/workload-process-groups-start.csv",
+      "source_sha256": "a916931515c2a68e6b0e3ce3729cb9849f6958a72929a81aa3656fb7d2e8d3e8",
+      "output_sha256": "343f68766f6e66d4ed3b13c48797e58073f89162cc8b2e896015a7d18349f233",
+      "transform": "only named app group totals retained; PID and process-level rows excluded",
+      "bytes": 504,
+      "format": "json"
+    },
+    {
+      "path": "results/workload/netflix-codex-12gb-2026-10-15/baseline-summary.json",
+      "source": "ram-results/netflix_codex_12gb_20261015_133635/baseline-summary.json",
+      "source_sha256": "5ba13ff8c70c408c3ec835b7caf5fc7317d895fa02a85a03440f1ed798d9d2c5",
+      "output_sha256": "8fa6f96cbea49f1d8a1cf68e33dc851ba85a1938af0355c9e67332726d2d7848",
+      "transform": "counter aggregates only; process information and paths omitted",
+      "bytes": 1310,
+      "format": "json"
+    },
+    {
+      "path": "results/battery/2026-10-15-summary.md",
+      "source": "battery-diagnostics-20261015-104721/battery-diagnostics.md",
+      "source_sha256": "f38d194baef552f78bf9c6657fabea934dad864d7d742ec57a6b3add71499f3c",
+      "output_sha256": "23f381feb01ce058cc559aeb049f57a49272f042cccffee085fca713e482b1f9",
+      "transform": "manual allowlisted extraction; usage timeline, identifiers, PPID, report GUIDs, and raw telemetry excluded",
+      "bytes": 651,
+      "format": "md"
+    },
+    {
+      "path": "results/battery/2026-10-15-short-check-telemetry.csv",
+      "source": "battery-diagnostics-20261015-104721/telemetry.csv",
+      "source_sha256": "9cd6d88e33514f2f1fe88d7d84ef94c2da6323bf6fa7bd7a26eb0a952b9b005f",
+      "output_sha256": "f9b2c2a7aa37c996579ebb946993503808708482bc8d6df6b3d6b59a42553044",
+      "transform": "short diagnostic sample, numeric/status fields only; blank temperature retained as unavailable",
+      "bytes": 2176,
+      "format": "csv"
+    },
+    {
+      "path": "results/ssd/2026-09-19-summary.json",
+      "source": "same-cwd-session/2026-09-19/CrystalDiskInfo-DiskInfo.txt",
+      "source_sha256": "a2b5fe20cb5eca12ac067d34f550d81026e69cf82ee6fe2e3f7aa42cfea84063",
+      "output_sha256": "92a068013ec74be6d2d9358c9b5c7870711f42a94d97509f713e7ab1791853c2",
+      "transform": "only named SSD SMART fields copied; all other drives and identifiers excluded",
+      "bytes": 841,
+      "format": "json"
+    },
+    {
+      "path": "results/ssd/2026-09-19-summary.md",
+      "source": "same-cwd-session/2026-09-19/CrystalDiskInfo-DiskInfo.txt",
+      "source_sha256": "a2b5fe20cb5eca12ac067d34f550d81026e69cf82ee6fe2e3f7aa42cfea84063",
+      "output_sha256": "fdb71161e2b9982f13042ff9e3920a7950bcc836639886210d8f7e47d43e888d",
+      "transform": "manual extraction of allowlisted SSD fields; no serials or other device records copied",
+      "bytes": 728,
+      "format": "md"
+    }
+  ],
+  "excluded": [
+    {
+      "source_area": "ram-validation-2026-10-14/tools/cpu-z-3.01/",
+      "reason": "third-party CPU-Z executables, driver-capable tool, ZIP and vendor files; publish official download reference only"
+    },
+    {
+      "source_area": "ram-validation-2026-10-15/",
+      "reason": "HTML, handoff ZIP/prompt, and local comparison views excluded; reviewed benchmark section exported separately"
+    },
+    {
+      "source_area": "battery-diagnostics-20261015-104721/",
+      "reason": "raw battery reports, detailed telemetry, event logs, installer/binaries, private identity, PPID and activity timeline excluded; curated summary only"
+    },
+    {
+      "source_area": "ram-results/*top-processes*.csv and process inventories",
+      "reason": "process-level user activity and identifiers excluded; only aggregate app group totals in workload summary"
+    },
+    {
+      "source_area": "tmp/, research/, RAM_8GB_BASELINE_REPOMIX.md, chat handoff files, __pycache__/",
+      "reason": "cache, unrelated research/chat, generated repomix, or Python bytecode; not candidate public evidence"
+    },
+    {
+      "source_area": "all non-allowlisted files",
+      "reason": "not copied by design; review individually before any future export"
+    }
+  ],
+  "source_inventory": [
+    {
+      "source_area": "ram-results/",
+      "files": 155,
+      "bytes": 524835,
+      "class": "mixed raw benchmark, telemetry, and process data; only allowlisted subsets exported"
+    },
+    {
+      "source_area": "ram-validation-2026-10-14/",
+      "files": 63,
+      "bytes": 26551134,
+      "class": "mixed useful findings and private inventory/tool files; selective export only"
+    },
+    {
+      "source_area": "ram-validation-2026-10-15/",
+      "files": 6,
+      "bytes": 140763,
+      "class": "reports, local HTML/ZIP handoffs; reviewed benchmark section only"
+    },
+    {
+      "source_area": "battery-diagnostics-20261015-104721/",
+      "files": 48,
+      "bytes": 17081704,
+      "class": "mixed diagnostic findings, dense usage timeline, private identifiers, and binaries; summary only"
+    },
+    {
+      "source_area": "tmp/",
+      "files": 117,
+      "bytes": 70755671,
+      "class": "cache and downloaded third-party data; excluded"
+    },
+    {
+      "source_area": "research/",
+      "files": 1,
+      "bytes": 40574,
+      "class": "unrelated research/chat log; excluded"
+    },
+    {
+      "source_area": "RAM_8GB_BASELINE_REPOMIX.md",
+      "files": 1,
+      "bytes": 178134,
+      "class": "generated repomix containing raw evidence; excluded"
+    },
+    {
+      "source_area": "__pycache__/",
+      "files": 1,
+      "bytes": 4614,
+      "class": "Python bytecode; excluded"
+    }
+  ],
+  "public_readiness_scan": {
+    "checks": [
+      "absolute_windows_paths",
+      "host_counter_names",
+      "mac_addresses",
+      "ipv4_literals",
+      "uuid_values",
+      "private_identity_labels"
+    ],
+    "scope": "generated results plus docs/*.md and scripts/*.py",
+    "violations": [],
+    "result": "pass",
+    "note": "No matched private values are printed; dotted software versions and Dell documentation URL GUIDs are excluded from network-address/UUID findings; hashes and source paths are relative."
+  }
+}

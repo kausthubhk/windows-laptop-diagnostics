@@ -1,0 +1,6 @@
+
+RunDate                           IsAdministrator Mlc                                                   
+-------                           --------------- ---                                                   
+2026-09-10T13:42:17.4373508+05:30            True <USERPROFILE>\Downloads\mlc_v3.13\Windows\mlc.exe
+
+
